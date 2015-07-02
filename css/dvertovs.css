@@ -1,0 +1,522 @@
+body{
+    background-color: #555555;
+    font-family: Helvetica,Arial,sans-serif;
+
+
+}
+header{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: #F4433c;
+    background-size: 250px;
+    background-image: url(../img/ostalo/logo.png);
+    background-repeat: no-repeat;
+    height:70px;
+
+    width:100%;
+}
+header > h1
+{
+    line-height: 70px;
+}
+nav#izbornik{
+    display: inline-block;
+
+    margin-top:5px;
+
+}
+.naslovLista
+{
+    font-weight:bold;
+}
+#izbornik > ul{
+    list-style:none;
+    line-height: 1;
+
+    margin:0px;
+    padding:0px;
+}
+#izbornik > ul li a:hover{
+    color:white;
+    background-color: #f23f37;
+}
+
+footer{
+    background-color: #f5443c;
+    text-align:center;
+    color:white;
+    width:100%;
+
+}
+
+footer >address > a:visited, footer >address > a{
+    color:white;
+}
+
+
+ul,ol {
+    list-style-position: inside;
+}
+/*Slika*/
+
+#profilna > img
+{
+    height:200px;
+}
+
+
+/*
+obrasci
+*/
+form
+{
+    background-color:#eaeaea;
+    border-radius: 5px;
+    padding: 5px;
+
+    width:90%;
+}
+
+
+input.gumb
+{
+    background: #ccc;
+    cursor:pointer;
+    padding: 5px 15px;
+    border-radius:5px;
+    margin-top:5px;
+    margin-bottom:5px;
+    width:100%;
+    font-weight: bold;
+}
+
+
+
+article
+{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+/*tablica*/
+
+caption
+{
+    color:#e4433c;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align:center;
+}
+table
+{
+    border-radius: 5px;
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+}
+
+th
+{
+    background-color: #e4433c;
+    border-style:none;
+    color:#eaeaea;
+    font-size:12px;
+    padding:8px;
+}
+
+td
+{
+    background-color: #eaeaea;
+    border-style:none;
+    color:#555;
+    font-size:12px;
+    padding:4px;
+}
+tr:hover td {
+    background-color: #a5443c;
+    color:white;
+}
+
+.link-validacija:link
+{
+    text-decoration: none;
+    cursor:pointer;
+}
+
+@media screen and (max-width: 450px)
+{
+    body
+    {
+        font-size:12px;
+        text-align: center;
+    }
+    header#zaglavlje
+    {
+        background-image: none;
+    }
+    #izbornik
+    {
+        width:100%;
+    }
+    #sadrzaj
+    {
+        text-align:center;
+    }
+    ol
+    {
+        list-style-type: lower-roman;
+    }
+    ul
+    {
+        list-style-type:circle;
+    }
+    ul > li > ul
+    {
+        list-style-type:disc;
+    }
+    #izbornik > ul li a{
+        display:block;
+        color: #e4433c;
+        text-decoration:none;
+        text-transform: uppercase;
+        background: #eaeaea;
+
+        border-top-style: dotted;
+        border-width: 1px;
+        border-color:#000000;
+        padding:11px 20px;
+    }
+    #izbornik > ul li:first-child a{
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-top-style: none;
+    } 
+    #izbornik > ul li:last-child a{
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    form
+    {
+        margin-right:auto;
+        margin-left:auto;
+    }
+    label
+    {
+
+        width:100%;
+
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    input
+    {
+        width:100%;
+    }
+    /*table*/
+    table
+    {
+        width:100%;
+    }
+    tr>th, tr>td
+    {
+        display:none;
+    }
+    tr>th:nth-child(1),tr>td:nth-child(1),
+    tr>th:nth-child(2),tr>td:nth-child(2)
+    {
+        display:table-cell;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px)
+{
+    body
+    {
+        font-size:13px;
+        text-align: center;
+    }
+    header
+    {
+
+    }
+    #izbornik > ul > li
+    {
+        display:inline;
+        float:left;
+    }
+    #izbornik > ul li a{
+        display:block;
+        color: #e4433c;
+        text-decoration:none;
+        text-transform: uppercase;
+        background: #eaeaea;
+
+        padding:11px 20px;
+
+        border-radius: 15px 15px;
+    }
+    #sadrzaj
+    {
+        text-align:center;
+    }
+    form
+    {
+        margin-right:auto;
+        margin-left:auto;
+    }
+    label
+    {
+        width:100%;
+        font-family: Verdana, Geneva, sans-serif;
+    }
+    input
+    {
+        width:100%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px)
+{
+    /*Centriranje stranice, postavljanje sirine na 95%*/
+    body
+    {
+        width: 95%;
+        margin-left: auto;
+        margin-right:auto;
+        font-size:13px;
+    }
+    nav#izbornik, #sadrzaj
+    {
+        float:left;
+
+    }
+    #sadrzaj
+    {
+        padding: 5px;
+        margin-left: 10px;
+        width:50%;
+
+        font-family: Georgia, serif;
+    }
+    #izbornik > ul{
+
+        width:150px;
+    }
+    #izbornik > ul li a{
+        display:block;
+        color: #e4433c;
+        text-decoration:none;
+        text-transform: uppercase;
+        background: #eaeaea;
+
+        border-top-style: dotted;
+        border-width: 1px;
+        border-color:#000000;
+        padding:11px 20px;
+    }
+    #izbornik > ul li:first-child a{
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-top-style: none;
+    } 
+    #izbornik > ul li:last-child a{
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    footer
+    {
+        clear:both;
+    }
+
+    /*Slika*/
+
+    #profilna > img
+    {
+        display:block;
+    }
+    #profilna
+    {
+        float:left;
+        border-style:solid;
+        border-width: 2px;
+        margin-right:10px;
+    }
+    section > #info
+    {
+        clear:both;
+    }
+    label
+    {
+
+        width:30%;
+
+        float:left;
+        clear:both;
+
+        font-family: Verdana, Geneva, sans-serif;
+    }
+
+    input
+    {
+        width:65%;
+    }
+}
+
+@media screen and (min-width: 1000px)
+{
+    /*Centriranje stranice, postavljanje sirine na 95%*/
+    body
+    {
+        width: 85%;
+        margin-left: auto;
+        margin-right:auto;
+        font-size:18px;
+    }
+    nav#izbornik, #sadrzaj
+    {
+        float:left;
+
+    }
+    #sadrzaj
+    {
+        padding: 5px;
+        margin-left: 10px;
+        width:70%;
+
+    }
+    #izbornik > ul li a{
+        display:block;
+        color: #e4433c;
+        text-decoration:none;
+        text-transform: uppercase;
+        background: #eaeaea;
+
+        border-top-style: dotted;
+        border-width: 1px;
+        border-color:#000000;
+        padding:11px 20px;
+    }
+    #izbornik > ul li:first-child a{
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-top-style: none;
+    } 
+    #izbornik > ul li:last-child a{
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    footer
+    {
+        clear:both;
+    }
+    #sadrzaj > article
+    {
+        width:100%;
+    }
+    /*Slika*/
+
+    #profilna > img
+    {
+        display:block;
+    }
+    #profilna
+    {
+        float:left;
+        border-style:solid;
+        border-width: 2px;
+        margin-right:10px;
+    }
+    section > #info
+    {
+        clear:both;
+    }
+    label
+    {
+
+        width:30%;
+
+        float:left;
+        clear:both;
+
+        font-family: Verdana, Geneva, sans-serif;
+    }
+
+    input,select
+    {
+        width:65%;
+    }
+
+}
+
+
+#greska
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color:orange;
+}
+
+.pogresanUnos
+{
+    border-color:#ff6666;
+}
+.ispravanUnos
+{
+    border-color:#66ff66;
+}
+
+/*
+za petu zadacu, 2 dio 
+*/
+#successMessage
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color:green;
+}
+
+#userNameSearch,#categorySearch
+{
+    width:25%;
+}
+#addCategory
+{
+    width:25%;
+}
+
+.category,.tournament
+{
+    margin-top:5px;
+    border-radius: 15px 50px 30px;
+    background: #8AC007;
+    padding: 10px 0 10px 50px;
+    width: 80%;
+    height: 10%; 
+}
+
+.ui-dialog.moderator-dialog {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: .8em;
+}
+
+#submitCategoryButton
+{
+    width:45%;
+    margin-left:10px;
+}
+.skrivena
+{
+    display:none;
+}
+
+.upload
+{
+    border-radius: 15px 50px 30px 5px;
+    background: #8AC007;
+    margin-top: 20px;
+    width: 80%;
+    height: 10%; 
+/*    padding: 20px; */
+/*    width: 200px;
+    height: 150px; */
+}

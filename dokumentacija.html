@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dokumentacija</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/dvertovs.css"/>
+    </head>
+    <body>
+        <nav id="izbornik"> 
+            <ul>
+                <li><a href="javascript:window.history.back();">Nazad</a></li>
+            </ul>
+        </nav>
+        <section id="sadrzaj">
+            <section>
+                <h2>Dokumentacija</h2>
+            </section>
+            <section id="info">
+                <section>
+                    <h2>Opis projektnog zadatka</h2>
+                    <p>
+                        Za zadatak smo imali aplikaciju turniri. Aplikacija služi za kreiranje i održavanje turnira. Aplikacija ima 4 uloge korisnika: neregistrirani, registrirani, moderator i administrator.
+                        
+                        Administrator ima ovlasti kreiranja kategorije turnira i dodjeljivanja moderatora koji mogu kreirati turnire za određenu kategoriju, vidi statistiku korištenja sustava te aplikativnu statistiku.
+                        
+                        Moderator prima zahtjeve korisnika za sudjelovanjem na turniru te ih odobrava i odbacuje. Za svaki prihvaćeni tim mora postaviti materijale. Zaključava turnir te šalje mail svim natjecateljima tko je pobjednik.
+                        
+                        Registrirani korisnik vidi popis turnira te može poslati zahtjev za sudjelovanjem. Mora unijeti naziv tima te kratak opis tima. Ako mu je prihvaćen zahtjev može pregledavati materijale o konkurentima na turniru.
+                        Može komentirati tim te davati ocjenu.
+                        
+                        Neregistrirani korisnik vidi popis turnira sa količinom prijavljenih timova, odabirom turnira vidi naziv i opis prihvaćenih timova.
+                    </p>
+                    
+                </section>
+                <section>
+                    <h2>Opis projektnog rješenja</h2>
+                    <p>
+                        Rješenje je realizirano.
+                        
+                        Od uloge administratora sam implementirao sve osim aplikativne statistike te CRU operacija nad svakom tablicom u bazi.
+                        
+                        Od uloge moderatora je sve implementirano, kao i kod registriranog korisnika te običnog korisnika.
+                    </p>
+                    
+                </section>
+                
+                <section>
+                    <h2>Dijagrami</h2>
+                    <a href='img/ostalo/era.png' target='_blank'>ERA</a><br>
+                    <a href='img/ostalo/navig.png' target='_blank'>Navigacijski dijagram</a>
+                    
+                </section>
+                
+                <section>
+                    <h2>Mapa mjesta</h2>
+                    <a href='img/ostalo/opisskripti.docx' target='_blank'>Opis skripti i mapa mjesta</a><br>
+                    
+                </section>
+                
+                <section>
+                    <h2>Opis vanjskih biblioteka</h2>
+                    <ol>
+                        <li>
+                            jQuery -> biblioteka za olakšano pisanje js funkcija, specifično za dohvaćanje DOM elemenata unutar dokumenta, koristio sam je gotov svugdje u projektu gdje sam trebao dohvatiti DOM elemente i njihove atribute, te također za slanje AJAX zahtjeva<br><br>
+                        </li>
+                        <li>
+                            jQuery UI -> jQuery biblioteka za prikaz nekih posebnih elemenata na sučelju poput warninga i nekakvih posebnih naznaka, koristio sam ga za podebljavanje input polja pri pogrešnom unosu u forme. Biblioteka sadrži i svoj CSS.<br><br>
+                        </li>
+                        <li>
+                            jQuery DataTables -> jQuery biblioteka za pretraživanje,straničenje te sortiranje tablica, koristio sam ga kod tablica timova te kod dnevnika i statistike. Biblioteka sadrži i svoj CSS.<br><br>
+                        </li>
+                        <li>
+                            Smarty -> biblioteka za predloške u php-u, odvaja dio programske logike od prikaza, čini kod jako urednim. Koristio sam ga na cijelom projektu. <br><br>
+                        </li>
+                    </ol>
+                    
+                </section>
+                <section>
+                    <h2>Opis korištenih alata</h2>
+                    <ol>
+                        <li>
+                            NetBeans -> IDE. Koristio sam ga kod izrade programskog koda projekta. <br><br>
+                        </li>
+                        <li>
+                            FireFTP -> Firefox plugin za FTP. Koristio sam ga kod uploada projekta na arku. <br><br>
+                        </li>
+                        <li>
+                            MySQL WorkBench -> Besplatni programa za grafičku izradu modela baze podataka te za spajanje na bazu. Koristio sam ga kod izrade ERA modela. <br><br>
+                        </li>
+                        <li>
+                            Creately -> Online alat za crtanje dijagrama. Koristio sam ga kod izrade dijagrama navigacije. <br><br>
+                        </li>
+                    </ol>
+                    
+                </section>
+                <section>
+                    <h2>Eksport baze</h2>
+                    <a href='img/ostalo/WebDiP2014x070.sql' target='_blank'>Eksport</a><br>
+                    
+                </section>
+            </section>
+        </section>
+
+    </body>
+</html>
+
